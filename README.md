@@ -34,4 +34,4 @@ As informações destinadas à instituição serão apresentadas de forma **anô
 
 Os requisitos detalhados do sistema estão disponíveis em:
 
-`docs/requisitos.md`
+`requisitos.md`
