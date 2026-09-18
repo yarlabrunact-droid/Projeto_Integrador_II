@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minúsculas Causas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav>
+
+            <h2>
+                MINÚSCULAS<span>CAUSAS</span>
+            </h2>
+
+            <div class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#update">Update</a>
+                <a href="#pautas">Pautas</a>
+                <a href="#investigacao">Investigação</a>
+                <a href="#debate">Debate</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <p class="tag">
+                    🚨 CENTRAL OFICIAL DAS PEQUENAS TRETAS
+                </p>
+
+                <h1>
+                    Qual é a pauta de hoje?
+                </h1>
+
+                <p>
+                    Notícias que não mudam o mundo, mas movimentam
+                    completamente os comentários da internet.
+                </p>
+
+                <a href="#pautas" class="btn">
+                    Investigar agora
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="policial.png" alt="Imagem da policial">
+            </div>
+
+        </section>
+
+
+        <!-- UPDATE DO DIA -->
+        <section id="update" class="daily-update">
+
+            <div class="update-content">
+
+                <p class="tag">
+                    ⚖️ PLANTÃO DAS MINÚSCULAS CAUSAS
+                </p>
+
+                <h2>
+                    Enquanto isso, no Tribunal de Minúsculas Causas:
+                </h2>
+
+                <h3>
+                    Cariúcha x Mãe Michelly: a treta que chegou à Justiça
+                </h3>
+
+                <p class="update-summary">
+                    Uma sequência de acusações, respostas e repercussões
+                    nas redes sociais colocou Cariúcha e Mãe Michelly da
+                    Cigana no centro da pauta.
+                </p>
+
+
+                <div class="update-box">
+
+                    <div>
+                        <strong>📌 O que aconteceu?</strong>
+
+                        <p>
+                            Mãe Michelly da Cigana publicou declarações
+                            envolvendo Cariúcha e afirmou que teria realizado
+                            trabalhos espirituais a pedido da apresentadora.
+                            Entre as alegações estavam supostos trabalhos
+                            relacionados à vida profissional de Cariúcha e
+                            ao afastamento de Léo Dias de uma emissora.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <strong>🗣️ E Cariúcha?</strong>
+
+                        <p>
+                            Cariúcha negou as acusações. O assunto ganhou
+                            repercussão nas redes sociais e passou a ser
+                            discutido também por personalidades ligadas ao
+                            caso.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <strong>⚖️ E a Justiça?</strong>
+
+                        <p>
+                            A polêmica ganhou um novo capítulo quando a
+                            Justiça determinou que Mãe Michelly não repetisse
+                            determinadas acusações contra Cariúcha, com
+                            previsão de multa em caso de descumprimento.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="update-footer">
+
+                    <span>
+                        🔥 CAOS DO DIA
+                    </span>
+
+                    <strong>
+                        96/100
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAUTAS -->
+        <section id="pautas" class="section">
+
+            <p class="tag">
+                📢 EM DESTAQUE
+            </p>
+
+            <h2>
+                Pautas do momento
+            </h2>
+
+
+            <div class="filters">
+
+                <button onclick="filterPautas('TODAS')">
+                    Todas
+                </button>
+
+                <button onclick="filterPautas('TRABALHO')">
+                    Trabalho
+                </button>
+
+                <button onclick="filterPautas('ROTINA')">
+                    Rotina
+                </button>
+
+                <button onclick="filterPautas('NUGGETS')">
+                    Nuggets
+                </button>
+
+                <button onclick="filterPautas('CASAMENTO')">
+                    Casamento
+                </button>
+
+                <button onclick="filterPautas('POLÊMICA')">
+                    Polêmicas
+                </button>
+
+            </div>
+
+
+            <div id="pautasContainer" class="cards"></div>
+
+        </section>
+
+
+        <!-- INVESTIGAÇÃO -->
+        <section id="investigacao" class="section investigation">
+
+            <p class="tag">
+                🔎 MODO INVESTIGAÇÃO
+            </p>
+
+            <h2 id="pautaTitle">
+                Selecione uma pauta
+            </h2>
+
+            <p id="pautaCategory" class="category">
+                CATEGORIA
+            </p>
+
+            <p id="pautaSummary">
+                Escolha uma pauta acima para visualizar o dossiê.
+            </p>
+
+
+            <!-- MEDIDOR DE CAOS -->
+            <div class="chaos">
+
+                <div class="chaos-top">
+
+                    <strong>
+                        Medidor de caos
+                    </strong>
+
+                    <span id="chaosNumber">
+                        0/100
+                    </span>
+
+                </div>
+
+
+                <div class="chaos-track">
+
+                    <div id="chaosBar"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DOSSIÊ -->
+            <div class="dossier">
+
+                <button onclick="toggleBlock(this)">
+                    <span>
+                        📌 Contexto
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+                </button>
+
+                <div class="block-content" id="context">
+                    Selecione uma pauta para ver o contexto.
+                </div>
+
+
+                <button onclick="toggleBlock(this)">
+                    <span>
+                        🕒 Linha do tempo
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+                </button>
+
+                <div class="block-content" id="timeline">
+                    Nenhuma informação selecionada.
+                </div>
+
+
+                <button onclick="toggleBlock(this)">
+                    <span>
+                        ⚖️ Os dois lados
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+                </button>
+
+                <div class="block-content" id="sides">
+                    Nenhuma informação selecionada.
+                </div>
+
+
+                <button onclick="toggleBlock(this)">
+                    <span>
+                        🧾 Evidências
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+                </button>
+
+                <div class="block-content" id="evidences">
+                    Nenhuma informação selecionada.
+                </div>
+
+
+                <button onclick="toggleBlock(this)">
+                    <span>
+                        🔨 Veredito
+                    </span>
+
+                    <span>
+                        +
+                    </span>
+                </button>
+
+                <div class="block-content" id="verdict">
+                    Nenhuma informação selecionada.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VOTAÇÃO -->
+        <section class="section voting">
+
+            <p class="tag">
+                🗳️ CONSULTA POPULAR
+            </p>
+
+            <h2>
+                Qual é o seu nível de envolvimento?
+            </h2>
+
+
+            <div class="vote-options">
+
+                <button onclick="vote('Estou envolvido')">
+                    🔥 Estou envolvido
+                </button>
+
+                <button onclick="vote('Não aguento mais')">
+                    🙄 Não aguento mais
+                </button>
+
+                <button onclick="vote('Só observando')">
+                    👀 Só observando
+                </button>
+
+            </div>
+
+
+            <p id="voteResult"></p>
+
+        </section>
+
+
+        <!-- DEBATE -->
+        <section id="debate" class="section debate">
+
+            <p class="tag">
+                💬 CENTRAL DE COMENTÁRIOS
+            </p>
+
+            <h2>
+                Entre no debate
+            </h2>
+
+            <p class="debate-description">
+                Cadastre-se para participar das discussões do Tribunal
+                de Minúsculas Causas.
+            </p>
+
+
+            <form onsubmit="register(event)">
+
+                <input
+                    type="text"
+                    id="userName"
+                    placeholder="Seu nome"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="userEmail"
+                    placeholder="Seu e-mail"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="userPassword"
+                    placeholder="Sua senha"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Cadastrar
+                </button>
+
+            </form>
+
+
+            <p id="registrationMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            MINÚSCULAS CAUSAS © 2026 |
+            Feito para investigar o que não precisava ser investigado.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

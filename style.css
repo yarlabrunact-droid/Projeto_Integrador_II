@@ -1,0 +1,1068 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+
+    --fundo: #080b18;
+
+    --secundario: #11172d;
+
+    --rosa: #ff2e88;
+
+    --roxo: #913cff;
+
+    --ciano: #00e5ff;
+
+    --branco: #ffffff;
+
+    --cinza: #b9bfd5;
+
+    --borda: #29304e;
+
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: var(--fundo);
+
+    color: var(--branco);
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 100;
+
+    background: rgba(8, 11, 24, 0.95);
+
+    border-bottom: 1px solid #252b49;
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+nav {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+nav h2 {
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+}
+
+
+nav h2 span {
+
+    color: var(--rosa);
+
+}
+
+
+.menu {
+
+    display: flex;
+
+    gap: 22px;
+
+}
+
+
+.menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: .2s;
+
+}
+
+
+.menu a:hover {
+
+    color: var(--ciano);
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 350px;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 120px 8%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(8, 11, 24, .97),
+            rgba(8, 11, 24, .62)
+        ),
+
+        url('policial.png') center / cover;
+
+}
+
+
+.hero-content {
+
+    max-width: 650px;
+
+}
+
+
+.tag {
+
+    color: var(--ciano);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(42px, 7vw, 78px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero p:not(.tag) {
+
+    color: var(--cinza);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero-image {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.hero-image img {
+
+    width: 330px;
+
+    max-width: 100%;
+
+    filter:
+        drop-shadow(
+            0 0 18px
+            rgba(145, 60, 255, .5)
+        );
+
+}
+
+
+.btn {
+
+    display: inline-block;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 13px 22px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--rosa),
+            var(--roxo)
+        );
+
+    color: white;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px
+        rgba(255, 46, 136, .25);
+
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+
+}
+
+
+.section h2 {
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================
+   UPDATE DO DIA
+========================= */
+
+.daily-update {
+
+    padding: 90px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #17132b,
+            #0d1124
+        );
+
+    border-top: 1px solid #272c4a;
+
+    border-bottom: 1px solid #272c4a;
+
+}
+
+
+.update-content {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+
+.update-content h2 {
+
+    max-width: 900px;
+
+    font-size: clamp(32px, 5vw, 52px);
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+
+}
+
+
+.update-content h3 {
+
+    color: var(--rosa);
+
+    font-size: 24px;
+
+    line-height: 1.4;
+
+    margin-bottom: 15px;
+
+}
+
+
+.update-summary {
+
+    color: var(--cinza);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 800px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.update-box {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.update-box > div {
+
+    background: var(--secundario);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+}
+
+
+.update-box strong {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 15px;
+
+}
+
+
+.update-box p {
+
+    color: var(--cinza);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+.update-footer {
+
+    max-width: 500px;
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #080b18;
+
+    border: 1px solid var(--rosa);
+
+    border-radius: 10px;
+
+    padding: 15px 20px;
+
+}
+
+
+.update-footer span {
+
+    color: var(--rosa);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.update-footer strong {
+
+    font-size: 20px;
+
+}
+
+
+/* =========================
+   FILTROS
+========================= */
+
+.filters {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.filters button,
+.vote-options button {
+
+    background: var(--secundario);
+
+    border: 1px solid var(--borda);
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.filters button:hover,
+.vote-options button:hover {
+
+    background: var(--roxo);
+
+    border-color: var(--roxo);
+
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 18px;
+
+}
+
+
+.card {
+
+    background: var(--secundario);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 13px;
+
+    padding: 22px;
+
+    transition: .25s;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--rosa);
+
+}
+
+
+.card .category {
+
+    color: var(--rosa);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.card h3 {
+
+    margin: 12px 0;
+
+    line-height: 1.3;
+
+}
+
+
+.card p:not(.category) {
+
+    color: var(--cinza);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+
+}
+
+
+.card button {
+
+    background: var(--rosa);
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.card button:hover {
+
+    background: var(--roxo);
+
+}
+
+
+/* =========================
+   INVESTIGAÇÃO
+========================= */
+
+.investigation {
+
+    max-width: none;
+
+    background: #0d1124;
+
+    padding-left: 12%;
+
+    padding-right: 12%;
+
+}
+
+
+.category {
+
+    color: var(--rosa);
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+}
+
+
+#pautaSummary {
+
+    max-width: 850px;
+
+    color: var(--cinza);
+
+    line-height: 1.8;
+
+    margin: 20px 0;
+
+}
+
+
+/* =========================
+   MEDIDOR DE CAOS
+========================= */
+
+.chaos {
+
+    max-width: 700px;
+
+    margin: 30px 0;
+
+}
+
+
+.chaos-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+.chaos-top span {
+
+    color: var(--rosa);
+
+    font-weight: 700;
+
+}
+
+
+.chaos-track {
+
+    height: 12px;
+
+    background: #292f49;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+#chaosBar {
+
+    height: 100%;
+
+    width: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--ciano),
+            var(--rosa)
+        );
+
+    transition: width .5s;
+
+}
+
+
+/* =========================
+   DOSSIÊ
+========================= */
+
+.dossier {
+
+    max-width: 850px;
+
+}
+
+
+.dossier > button {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 17px;
+
+    margin-top: 8px;
+
+    background: var(--secundario);
+
+    color: white;
+
+    border: 1px solid var(--borda);
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.dossier > button:hover {
+
+    border-color: var(--rosa);
+
+}
+
+
+.block-content {
+
+    display: none;
+
+    padding: 18px;
+
+    background: #171d36;
+
+    color: var(--cinza);
+
+    line-height: 1.8;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+}
+
+
+.block-content.active {
+
+    display: block;
+
+}
+
+
+/* =========================
+   VOTAÇÃO
+========================= */
+
+.voting {
+
+    text-align: center;
+
+}
+
+
+.vote-options {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+#voteResult,
+#registrationMessage {
+
+    color: var(--ciano);
+
+    margin-top: 20px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================
+   DEBATE
+========================= */
+
+.debate-description {
+
+    color: var(--cinza);
+
+    max-width: 600px;
+
+    margin-bottom: 25px;
+
+    line-height: 1.7;
+
+}
+
+
+.debate form {
+
+    max-width: 550px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.debate input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: var(--secundario);
+
+    border: 1px solid var(--borda);
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    outline: none;
+
+}
+
+
+.debate input:focus {
+
+    border-color: var(--rosa);
+
+}
+
+
+.debate input::placeholder {
+
+    color: #7d849c;
+
+}
+
+
+.debate form button {
+
+    align-self: flex-start;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: var(--cinza);
+
+    background: #050711;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .menu {
+
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding: 150px 25px 80px;
+
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+
+        margin: auto;
+
+    }
+
+
+    .hero-image img {
+
+        width: 230px;
+
+    }
+
+
+    .section {
+
+        padding: 70px 25px;
+
+    }
+
+
+    .section h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .update-box {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .update-content h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .update-content h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    .investigation {
+
+        padding-left: 25px;
+
+        padding-right: 25px;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    nav h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .menu a {
+
+        font-size: 12px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .update-footer {
+
+        width: 100%;
+
+    }
+
+}
