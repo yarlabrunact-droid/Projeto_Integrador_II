@@ -83,7 +83,7 @@ Disponibiliza informações e orientações relacionadas à organização da rot
 
 ### Painel Institucional
 
-Apresenta informações gerais e agregadas que podem auxiliar instituições de ensino na identificação de padrões relacionados à carga acadêmica.
+Apresenta informações gerais e agregadas que podem auxiliar instituições de ensino na visualização da carga acadêmica.
 
 Os dados apresentados nesse ambiente não devem expor estudantes individualmente.
 
@@ -99,7 +99,7 @@ O protótipo foi desenvolvido utilizando:
 
 - **Flutter** — framework utilizado para desenvolvimento da aplicação;
 - **Dart** — linguagem de programação utilizada pelo Flutter;
-- **Material Design 3** — sistema de componentes e identidade visual da interface;
+- **Material Design 3** — sistema de componentes utilizados na interface;
 - **Visual Studio Code** — ambiente utilizado para desenvolvimento;
 - **Android Studio** — utilizado para configuração e suporte ao ambiente Android;
 - **GitHub** — utilizado para versionamento, organização e documentação do projeto.
@@ -120,3 +120,28 @@ Abra o terminal dentro da pasta do projeto e execute:
 
 ```bash
 flutter pub get
+
+---
+## Estrutura do projeto
+
+A organização atual do repositório é:
+
+```text
+eunaotobem
+│
+├── docs
+│   ├── documentacao_final.md
+│   ├── eunaotobem.drawio.png
+│   ├── modelagem.md
+│   └── testes.md
+│
+├── produto
+│   └── main.dart
+│
+├── .gitignore
+├── README.md
+├── index.html
+├── policial.png
+├── requisitos.md
+├── script.js
+└── style.css
