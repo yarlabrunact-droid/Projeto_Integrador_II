@@ -1,37 +1,47 @@
-# Eu Não Tô Bem
-
-## Sistema Inteligente de Prevenção da Sobrecarga Estudantil
+# Eu Não Tô Bem — Sistema Inteligente de Prevenção da Sobrecarga Estudantil
 
 ## Sobre o projeto
 
-O **Eu Não Tô Bem** é uma plataforma criada para ajudar a identificar e prevenir a sobrecarga acadêmica entre estudantes. A ideia surgiu a partir de um problema muito presente no ambiente escolar: a concentração de provas, trabalhos e outras atividades em determinados períodos, que pode tornar a rotina dos alunos excessivamente pesada.
+O projeto "Eu Não Tô Bem" é um protótipo de sistema desenvolvido para auxiliar estudantes no acompanhamento de sua rotina acadêmica e na identificação de períodos de maior concentração de atividades.
 
-A plataforma busca analisar a rotina acadêmica dos estudantes e identificar períodos em que a carga de atividades esteja elevada. A partir dessas informações, o sistema poderá apresentar alertas e auxiliar na organização das atividades, permitindo que o estudante perceba com antecedência quando sua rotina estiver ficando sobrecarregada.
+A proposta é utilizar informações da rotina acadêmica, como atividades, prazos, horas estimadas e prioridades, para apresentar um indicador de carga acadêmica e auxiliar o estudante na organização de seus compromissos.
 
-Além disso, a instituição de ensino poderá ter acesso a informações **anônimas e agrupadas**, possibilitando identificar períodos de maior carga acadêmica e compreender melhor a realidade dos estudantes.
-
-##  Objetivo
-
-O principal objetivo do projeto é desenvolver uma ferramenta que contribua para a **prevenção da sobrecarga acadêmica**, ajudando estudantes a organizarem melhor sua rotina e fornecendo informações que possam auxiliar as instituições de ensino no planejamento das atividades.
-
-##  Por que esse projeto?
-
-A sobrecarga acadêmica muitas vezes só é percebida quando já começa a afetar a rotina e o desempenho do estudante. Por isso, o projeto propõe uma abordagem preventiva: **identificar sinais de uma carga elevada antes que ela se torne um problema maior**.
-
-##  Diferencial
-
-O diferencial do **Eu Não Tô Bem** está justamente na prevenção. Em vez de apenas registrar tarefas ou funcionar como um calendário, a proposta é utilizar as informações da rotina acadêmica para **identificar padrões e antecipar possíveis períodos críticos**.
+O sistema possui caráter preventivo e educacional, não realizando diagnóstico médico ou psicológico.
 
 ## Público-alvo
 
-O projeto é destinado principalmente a **estudantes**, mas também poderá auxiliar **professores, coordenação pedagógica e instituições de ensino** na compreensão da distribuição das atividades acadêmicas.
+- Estudantes;
+- Professores;
+- Coordenação pedagógica;
+- Instituições de ensino.
 
-## Privacidade
+## Principais funcionalidades
 
-As informações destinadas à instituição serão apresentadas de forma **anônima e agrupada**, preservando a identidade dos estudantes. A plataforma também não tem como objetivo realizar diagnósticos médicos ou psicológicos.
+- Cadastro e login;
+- Cadastro de atividades acadêmicas;
+- Definição de prazo, tipo, quantidade de horas e prioridade;
+- Calendário de atividades;
+- Indicador de carga acadêmica;
+- Identificação de períodos de maior concentração de atividades;
+- Alertas sobre carga acadêmica;
+- Sugestões de organização;
+- Área de apoio;
+- Painel institucional;
+- Utilização de dados institucionais de forma agregada e anônima.
 
-## Documentação
+## Tecnologias utilizadas
 
-Os requisitos detalhados do sistema estão disponíveis em:
+- Flutter;
+- Dart;
+- Material Design 3;
+- Visual Studio Code;
+- Android Studio.
 
-`requisitos.md`
+## Como executar o projeto
+
+### 1. Instalar as dependências
+
+No terminal, dentro da pasta do projeto, execute:
+
+```bash
+flutter pub get
